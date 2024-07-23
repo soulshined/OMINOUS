@@ -1,0 +1,9 @@
+=== Given
+args: -Type Important
+===
+
+'This is a important note'
+
+=== Expect
+
+> :no_entry_sign: This is a important note

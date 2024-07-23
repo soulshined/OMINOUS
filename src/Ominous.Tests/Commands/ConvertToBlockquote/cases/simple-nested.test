@@ -1,0 +1,16 @@
+=== Given
+type: expression
+===
+
+'**NOTE** This is first note',"",@('This is note 1.a', " ", 'This is note 1.b', @('This is note 1.b.i','This is note 1.b.ii','This is note 1.b.iii')) | Quote
+
+=== Expect
+
+> **NOTE** This is first note
+> 
+>> This is note 1.a
+>> 
+>> This is note 1.b
+>>> This is note 1.b.i
+>>> This is note 1.b.ii
+>>> This is note 1.b.iii

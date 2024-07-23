@@ -1,0 +1,12 @@
+=== Given
+type: expression
+===
+
+'one','three','five','seven' | TaskList
+
+=== Expect
+
+- [ ] one
+- [ ] three
+- [ ] five
+- [ ] seven

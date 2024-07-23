@@ -1,0 +1,54 @@
+{
+    "workbench.colorCustomizations": {},
+    "dotnet.defaultSolution": "Ominous.sln",
+    "powershell.scriptAnalysis.enable": true,
+    "powershell.scriptAnalysis.settingsPath": ".vscode/PSScriptAnalyzerSettings.psd1",
+    "csharp.format.enable": true,
+    "[csharp]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 4,
+        "editor.formatOnSave": true,
+        "editor.formatOnType": true,
+        "files.trimTrailingWhitespace": true,
+        "files.trimFinalNewlines": true,
+        "files.insertFinalNewline": false,
+        "navigator.allowableSymbols": [
+            "Class",
+            "Constructor",
+            "Enum",
+            "Function",
+            "Method",
+            "Namespace",
+            "Struct"
+        ]
+    },
+    "files.associations": {
+        "*.ps1xml": "xml"
+    },
+    "[plaintext]": {
+        "editor.formatOnSave": false,
+        "files.insertFinalNewline": true,
+        "files.trimFinalNewlines": false,
+        "files.trimTrailingWhitespace": false,
+        "editor.rulers": [
+            80,
+            100
+        ]
+    },
+    "[todo]": {
+        "editor.quickSuggestions": {
+            "comments": "off",
+            "strings": "off",
+            "other": "off"
+        },
+    },
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/bower_components": true,
+        "**/*.code-search": true,
+        "**/bin": true,
+        "**/obj": true,
+        "src/Ominous.Tests/**/*.test": true
+    },
+    "search.quickOpen.includeHistory": false
+}

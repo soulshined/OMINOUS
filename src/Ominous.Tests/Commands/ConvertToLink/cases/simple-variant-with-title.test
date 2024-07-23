@@ -1,0 +1,9 @@
+=== Given
+args: -Title foobar
+===
+
+'http://example.com'
+
+=== Expect
+
+[foobar](http://example.com)

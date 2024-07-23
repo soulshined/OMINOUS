@@ -1,0 +1,37 @@
+=== Given
+type: expression
+===
+
+[ordered]@{ Value = 'one'; Bone = 19; Freed = $false },'three','five','seven' | TaskList
+'one',@('three', $true),'five','seven' | TaskList
+[ordered]@{ Value = 'one'; Checked = $true },'three','five','seven' | TaskList
+[ordered]@{Bone='tail';Checked=$true;Nested=[ordered]@{A='b';B='a';}},'three','five','seven' | TaskList
+
+=== Expect
+
+- [ ] one
+- [ ] three
+- [ ] five
+- [ ] seven
+
+
+- [ ] one
+- [x] three
+- [ ] five
+- [ ] seven
+
+
+- [x] one
+- [ ] three
+- [ ] five
+- [ ] seven
+
+
+- [ ] Bone: tail
+- [ ] Checked: True
+- [ ] Nested
+  - [ ] A: b
+  - [ ] B: a
+- [ ] three
+- [ ] five
+- [ ] seven

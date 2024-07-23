@@ -1,0 +1,7 @@
+=== Given ===
+
+'**NOTE** This is a note'
+
+=== Expect
+
+> **NOTE** This is a note

@@ -1,0 +1,9 @@
+=== Given
+args: -Type Warning
+===
+
+'This is a warning'
+
+=== Expect
+
+> :warning: This is a warning

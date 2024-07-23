@@ -1,0 +1,2461 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<helpItems schema="maml" xmlns="http://msh">
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Convert-WithAfterBlock</command:name>
+      <command:verb>Convert</command:verb>
+      <command:noun>WithAfterBlock</command:noun>
+      <maml:description>
+        <maml:para>Convert to markdown with only after blocks</maml:para>
+        <maml:para>Mnemonic Aliases: `AfterBlock`, `Block`, `Markdown`, `Mkdn`</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>This function converts a nullable string value to markdown using only after block syntax. These can be used to do things like inline code blocks, indent, center or color specific text.</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Convert-WithAfterBlock</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="After">
+          <maml:name>AfterBlock</maml:name>
+          <maml:description>
+            <maml:para>An after block is a scriptblock with ominous attributes specified that the content provided to it will be converted to</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">Ominous.Model.AfterBlock[]</command:parameterValue>
+          <dev:type>
+            <maml:name>Ominous.Model.AfterBlock[]</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>NoMappers</maml:name>
+          <maml:description>
+            <maml:para>Coerce conversion to not pass input objects to type mappers, even if they are defined</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>System.Management.Automation.SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>NoNewLine</maml:name>
+          <maml:description>
+            <maml:para>Prevent trailing line sequences in converted output</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>System.Management.Automation.SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+          <maml:name>Value</maml:name>
+          <maml:description>
+            <maml:para>Nullable string to convert to markdown</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+          <dev:type>
+            <maml:name>System.String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="After">
+        <maml:name>AfterBlock</maml:name>
+        <maml:description>
+          <maml:para>An after block is a scriptblock with ominous attributes specified that the content provided to it will be converted to</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">Ominous.Model.AfterBlock[]</command:parameterValue>
+        <dev:type>
+          <maml:name>Ominous.Model.AfterBlock[]</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>NoMappers</maml:name>
+        <maml:description>
+          <maml:para>Coerce conversion to not pass input objects to type mappers, even if they are defined</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">System.Management.Automation.SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>System.Management.Automation.SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>NoNewLine</maml:name>
+        <maml:description>
+          <maml:para>Prevent trailing line sequences in converted output</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">System.Management.Automation.SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>System.Management.Automation.SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+        <maml:name>Value</maml:name>
+        <maml:description>
+          <maml:para>Nullable string to convert to markdown</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+        <dev:type>
+          <maml:name>System.String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes>
+      <command:inputType>
+        <dev:type>
+          <maml:name>System.String</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:inputType>
+    </command:inputTypes>
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name>System.String</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- Example 1 --------------------------</maml:title>
+        <dev:code>$CodeBlock = {
+    [Style.Code()]
+    param()
+}
+PS D:\&gt; 'Foobar' | Mkdn $CodeBlock</dev:code>
+        <dev:remarks>
+          <maml:para>An after block is a scriptblock with OMINOUS attributes specified that the content provided to it will be converted to. In this example, it converts Foobar to `Foobar`</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 2 --------------------------</maml:title>
+        <dev:code>$BoldItalicBlock = {
+    [Style.Bold()]
+    [Style.Italic()]
+    param()
+}
+$CenterBlock = {
+    [Style.Center()]
+    param()
+}
+PS D:\&gt; 'Foobar' | Mkdn $BoldItalicBlock, $CenterBlock</dev:code>
+        <dev:remarks>
+          <maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Online Version:</maml:linkText>
+        <maml:uri>https://github.com/soulshined/OMINOUS/blob/master/publish/generate-docs/cmdlets/Convert-WithAfterBlock.md</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>https://github.com/soulshined/OMINOUS/wiki/After-Blocks</maml:linkText>
+        <maml:uri>https://github.com/soulshined/OMINOUS/wiki/After-Blocks</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>https://github.com/soulshined/OMINOUS/wiki/Attributes</maml:linkText>
+        <maml:uri>https://github.com/soulshined/OMINOUS/wiki/Attributes</maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>ConvertTo-Admonition</command:name>
+      <command:verb>ConvertTo</command:verb>
+      <command:noun>Admonition</command:noun>
+      <maml:description>
+        <maml:para>Convert to a flavored markdown callout/admonition (i.e. note, warning, tip etc)</maml:para>
+        <maml:para>Mnemonic Aliases: `Admonition`, `Alert`, `Caution`, `Important`, `Tip`, `Warning`</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>For flavorless markdown, a generic emoji will be used in lieu of captions by default</maml:para>
+      <maml:para>For flavorless markdown, you can use the `-WithCaption` switch to annotate in bold the admonition type for the admonition. See Example #2</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>ConvertTo-Admonition</maml:name>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="0" aliases="none">
+          <maml:name>Value</maml:name>
+          <maml:description>
+            <maml:para>Nullable string to convert to markdown</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+          <dev:type>
+            <maml:name>System.String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="After">
+          <maml:name>AfterBlock</maml:name>
+          <maml:description>
+            <maml:para>An after block is a scriptblock with ominous attributes declared of which the content provided to it will be styled by</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">Ominous.Model.AfterBlock[]</command:parameterValue>
+          <dev:type>
+            <maml:name>Ominous.Model.AfterBlock[]</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>NoMappers</maml:name>
+          <maml:description>
+            <maml:para>Coerce conversion to not pass input objects to type mappers, even if they are defined</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>System.Management.Automation.SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>NoNewLine</maml:name>
+          <maml:description>
+            <maml:para>Prevent trailing line sequences in converted output</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>System.Management.Automation.SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>Type</maml:name>
+          <maml:description>
+            <maml:para>Synonymous to a 'callout' type (i.e. tip, note, warning etc)</maml:para>
+          </maml:description>
+          <command:parameterValueGroup>
+            <command:parameterValue required="false" command:variableLength="false">CAUTION</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">NOTE</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">IMPORTANT</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">TIP</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">WARNING</command:parameterValue>
+          </command:parameterValueGroup>
+          <command:parameterValue required="true" variableLength="false">Ominous.Constants.AdmonitionType</command:parameterValue>
+          <dev:type>
+            <maml:name>Ominous.Constants.AdmonitionType</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>WithCaption</maml:name>
+          <maml:description>
+            <maml:para>For flavorless markdown, use this to add a caption to the callout</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>System.Management.Automation.SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="After">
+        <maml:name>AfterBlock</maml:name>
+        <maml:description>
+          <maml:para>An after block is a scriptblock with ominous attributes declared of which the content provided to it will be styled by</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">Ominous.Model.AfterBlock[]</command:parameterValue>
+        <dev:type>
+          <maml:name>Ominous.Model.AfterBlock[]</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>NoMappers</maml:name>
+        <maml:description>
+          <maml:para>Coerce conversion to not pass input objects to type mappers, even if they are defined</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">System.Management.Automation.SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>System.Management.Automation.SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>NoNewLine</maml:name>
+        <maml:description>
+          <maml:para>Prevent trailing line sequences in converted output</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">System.Management.Automation.SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>System.Management.Automation.SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>Type</maml:name>
+        <maml:description>
+          <maml:para>Synonymous to a 'callout' type (i.e. tip, note, warning etc)</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">Ominous.Constants.AdmonitionType</command:parameterValue>
+        <dev:type>
+          <maml:name>Ominous.Constants.AdmonitionType</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="0" aliases="none">
+        <maml:name>Value</maml:name>
+        <maml:description>
+          <maml:para>Nullable string to convert to markdown</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+        <dev:type>
+          <maml:name>System.String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>WithCaption</maml:name>
+        <maml:description>
+          <maml:para>For flavorless markdown, use this to add a caption to the callout</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">System.Management.Automation.SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>System.Management.Automation.SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes>
+      <command:inputType>
+        <dev:type>
+          <maml:name>System.String</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:inputType>
+    </command:inputTypes>
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name>System.String</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- Example 1 --------------------------</maml:title>
+        <dev:code>PS D:\&gt; 'Daily Maintenance occurs at 1700 PST' | ConvertTo-Admonition"
+
+&gt; :spiral_notepad: Daily Maintenance occurs at 1700 PST</dev:code>
+        <dev:remarks>
+          <maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 2 --------------------------</maml:title>
+        <dev:code>PS D:\&gt; 'Daily Maintenance occurs at 1700 PST' | ConvertTo-Admonition -WithCaption"
+
+&gt; :spiral_notepad: **NOTE**: Daily Maintenance occurs at 1700 PST</dev:code>
+        <dev:remarks>
+          <maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 3 --------------------------</maml:title>
+        <dev:code>$global:OminousPreference = @{
+    Flavor = 'GitHub'
+}
+PS D:\&gt; 'Daily Maintenance occurs at 1700 PST' | ConvertTo-Admonition
+
+&gt; [!NOTE]
+&gt; Daily Maintenance occurs at 1700 PST</dev:code>
+        <dev:remarks>
+          <maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 4 --------------------------</maml:title>
+        <dev:code>PS D:\&gt; 'Don't forget to log out every night!' | ConvertTo-Admonition -Type Warning</dev:code>
+        <dev:remarks>
+          <maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 5 --------------------------</maml:title>
+        <dev:code>PS D:\&gt; 'Server restart in 30 mins' | ConvertTo-Admonition -Type Important</dev:code>
+        <dev:remarks>
+          <maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 6 --------------------------</maml:title>
+        <dev:code>PS D:\&gt; 'You can skip ads after 5 seconds' | ConvertTo-Admonition -Type Tip</dev:code>
+        <dev:remarks>
+          <maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Online Version:</maml:linkText>
+        <maml:uri>https://github.com/soulshined/OMINOUS/blob/master/publish/generate-docs/cmdlets/ConvertTo-Admonition.md</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>https://github.com/soulshined/OMINOUS/wiki/Ominous-Preference</maml:linkText>
+        <maml:uri>https://github.com/soulshined/OMINOUS/wiki/Ominous-Preference</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>https://github.com/soulshined/OMINOUS/wiki/After-Blocks</maml:linkText>
+        <maml:uri>https://github.com/soulshined/OMINOUS/wiki/After-Blocks</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>https://github.com/soulshined/OMINOUS/wiki/Attributes</maml:linkText>
+        <maml:uri>https://github.com/soulshined/OMINOUS/wiki/Attributes</maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>ConvertTo-Blockquote</command:name>
+      <command:verb>ConvertTo</command:verb>
+      <command:noun>Blockquote</command:noun>
+      <maml:description>
+        <maml:para>Convert to markdown blockquote syntax</maml:para>
+        <maml:para>Mnemonic Aliases: `Blockquote`, `Quote`</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>This command converts value[s] to a markdown blockquote. If the value is an array of values it gets collected into 1 single blockquote, separated by an empty line in the blockquote.</maml:para>
+      <maml:para>When using an array as one of the values in the initial set of values (a nested array), the nested array becomes a nested blockquote inherently. See Example #2</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>ConvertTo-Blockquote</maml:name>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="0" aliases="none">
+          <maml:name>InputObject</maml:name>
+          <maml:description>
+            <maml:para>object to convert to markdown</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">System.Management.Automation.PSObject</command:parameterValue>
+          <dev:type>
+            <maml:name>System.Management.Automation.PSObject</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="After">
+          <maml:name>AfterBlock</maml:name>
+          <maml:description>
+            <maml:para>An after block is a scriptblock with ominous attributes declared of which the content provided to it will be styled by</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">Ominous.Model.AfterBlock[]</command:parameterValue>
+          <dev:type>
+            <maml:name>Ominous.Model.AfterBlock[]</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>NoMappers</maml:name>
+          <maml:description>
+            <maml:para>Coerce conversion to not pass input objects to type mappers, even if they are defined</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>System.Management.Automation.SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>NoNewLine</maml:name>
+          <maml:description>
+            <maml:para>Prevent trailing line sequences in converted output</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>System.Management.Automation.SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="After">
+        <maml:name>AfterBlock</maml:name>
+        <maml:description>
+          <maml:para>An after block is a scriptblock with ominous attributes declared of which the content provided to it will be styled by</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">Ominous.Model.AfterBlock[]</command:parameterValue>
+        <dev:type>
+          <maml:name>Ominous.Model.AfterBlock[]</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="0" aliases="none">
+        <maml:name>InputObject</maml:name>
+        <maml:description>
+          <maml:para>object to convert to markdown</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">System.Management.Automation.PSObject</command:parameterValue>
+        <dev:type>
+          <maml:name>System.Management.Automation.PSObject</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>NoMappers</maml:name>
+        <maml:description>
+          <maml:para>Coerce conversion to not pass input objects to type mappers, even if they are defined</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">System.Management.Automation.SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>System.Management.Automation.SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>NoNewLine</maml:name>
+        <maml:description>
+          <maml:para>Prevent trailing line sequences in converted output</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">System.Management.Automation.SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>System.Management.Automation.SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes>
+      <command:inputType>
+        <dev:type>
+          <maml:name>System.Management.Automation.PSObject</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:inputType>
+    </command:inputTypes>
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name>System.String</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- Example 1 --------------------------</maml:title>
+        <dev:code>PS D:\&gt; 'This is a blockquote','','This is another line in the blockquote' | ConvertTo-Blockquote
+
+&gt; This is a blockquote
+&gt;
+&gt; This is another line in the blockquote</dev:code>
+        <dev:remarks>
+          <maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 2 --------------------------</maml:title>
+        <dev:code>PS D:\&gt; '**NOTE** This is first note',"",@('This is note 1.a', " ", 'This is note 1.b', @('This is note 1.b.i','This is note 1.b.ii','This is note 1.b.iii')) | Quote
+
+&gt; **NOTE** This is first note
+&gt;
+&gt;&gt; This is note 1.a
+&gt;&gt;
+&gt;&gt; This is note 1.b
+&gt;&gt;&gt; This is note 1.b.i
+&gt;&gt;&gt; This is note 1.b.ii
+&gt;&gt;&gt; This is note 1.b.iii</dev:code>
+        <dev:remarks>
+          <maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Online Version:</maml:linkText>
+        <maml:uri>https://github.com/soulshined/OMINOUS/blob/master/publish/generate-docs/cmdlets/ConvertTo-Blockquote.md</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>https://github.com/soulshined/OMINOUS/wiki/After-Blocks</maml:linkText>
+        <maml:uri>https://github.com/soulshined/OMINOUS/wiki/After-Blocks</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>https://github.com/soulshined/OMINOUS/wiki/Attributes</maml:linkText>
+        <maml:uri>https://github.com/soulshined/OMINOUS/wiki/Attributes</maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>ConvertTo-Code</command:name>
+      <command:verb>ConvertTo</command:verb>
+      <command:noun>Code</command:noun>
+      <maml:description>
+        <maml:para>Convert to markdown code block (fence block) syntax</maml:para>
+        <maml:para>Mnemonic Aliases: `Code`</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>This command always uses backtick syntax as opposed to indentation syntax</maml:para>
+      <maml:para>Do not use this command for inline code syntax, this always assumes fence code block syntax is needed. For inline code refer to creating an AfterBlock</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>ConvertTo-Code</maml:name>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="0" aliases="none">
+          <maml:name>Value</maml:name>
+          <maml:description>
+            <maml:para>Nullable string to convert to markdown</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+          <dev:type>
+            <maml:name>System.String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="After">
+          <maml:name>AfterBlock</maml:name>
+          <maml:description>
+            <maml:para>An after block is a scriptblock with ominous attributes declared of which the content provided to it will be styled by</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">Ominous.Model.AfterBlock[]</command:parameterValue>
+          <dev:type>
+            <maml:name>Ominous.Model.AfterBlock[]</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="Syntax">
+          <maml:name>Language</maml:name>
+          <maml:description>
+            <maml:para>Specify the language/syntax for highlighting</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+          <dev:type>
+            <maml:name>System.String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>NoMappers</maml:name>
+          <maml:description>
+            <maml:para>Coerce conversion to not pass input objects to type mappers, even if they are defined</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>System.Management.Automation.SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>NoNewLine</maml:name>
+          <maml:description>
+            <maml:para>Prevent trailing line sequences in converted output</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>System.Management.Automation.SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="After">
+        <maml:name>AfterBlock</maml:name>
+        <maml:description>
+          <maml:para>An after block is a scriptblock with ominous attributes declared of which the content provided to it will be styled by</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">Ominous.Model.AfterBlock[]</command:parameterValue>
+        <dev:type>
+          <maml:name>Ominous.Model.AfterBlock[]</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="Syntax">
+        <maml:name>Language</maml:name>
+        <maml:description>
+          <maml:para>Specify the language/syntax for highlighting</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+        <dev:type>
+          <maml:name>System.String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>NoMappers</maml:name>
+        <maml:description>
+          <maml:para>Coerce conversion to not pass input objects to type mappers, even if they are defined</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">System.Management.Automation.SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>System.Management.Automation.SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>NoNewLine</maml:name>
+        <maml:description>
+          <maml:para>Prevent trailing line sequences in converted output</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">System.Management.Automation.SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>System.Management.Automation.SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="0" aliases="none">
+        <maml:name>Value</maml:name>
+        <maml:description>
+          <maml:para>Nullable string to convert to markdown</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+        <dev:type>
+          <maml:name>System.String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes>
+      <command:inputType>
+        <dev:type>
+          <maml:name>System.String</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:inputType>
+    </command:inputTypes>
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name>System.String</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- Example 1 --------------------------</maml:title>
+        <dev:code>@"
+namespace Ominous.Utils;
+
+public sealed class MarkdownUtils
+{
+    public static void Escape(ref string s, params char[] chars)
+    {
+        foreach (char ch in chars)
+        {
+            s = s.Replace($"{ch}", $"\\{ch}");
+        }
+    }
+}
+"@ | ConvertTo-Code -Language csharp</dev:code>
+        <dev:remarks>
+          <maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Online Version:</maml:linkText>
+        <maml:uri>https://github.com/soulshined/OMINOUS/blob/master/publish/generate-docs/cmdlets/ConvertTo-Code.md</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>https://github.com/soulshined/OMINOUS/wiki/After-Blocks</maml:linkText>
+        <maml:uri>https://github.com/soulshined/OMINOUS/wiki/After-Blocks</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>https://github.com/soulshined/OMINOUS/wiki/Attributes</maml:linkText>
+        <maml:uri>https://github.com/soulshined/OMINOUS/wiki/Attributes</maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>ConvertTo-Details</command:name>
+      <command:verb>ConvertTo</command:verb>
+      <command:noun>Details</command:noun>
+      <maml:description>
+        <maml:para>Convert to a collapsible/details explicit html element</maml:para>
+        <maml:para>Mnemonic Aliases: `Collapse`, `ConvertTo-Collapse`, `Details`</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>This command converts a value to a collapsible html element (`&lt;details&gt;`)</maml:para>
+      <maml:para>&gt; [!NOTE] &gt; This command always outputs html</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>ConvertTo-Details</maml:name>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="0" aliases="none">
+          <maml:name>Value</maml:name>
+          <maml:description>
+            <maml:para>Nullable string to convert to markdown</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+          <dev:type>
+            <maml:name>System.String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="Title">
+          <maml:name>Summary</maml:name>
+          <maml:description>
+            <maml:para>The description of the drop down caption</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+          <dev:type>
+            <maml:name>System.String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="After">
+          <maml:name>AfterBlock</maml:name>
+          <maml:description>
+            <maml:para>An after block is a scriptblock with ominous attributes declared of which the content provided to it will be styled by</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">Ominous.Model.AfterBlock[]</command:parameterValue>
+          <dev:type>
+            <maml:name>Ominous.Model.AfterBlock[]</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>NoMappers</maml:name>
+          <maml:description>
+            <maml:para>Coerce conversion to not pass input objects to type mappers, even if they are defined</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>System.Management.Automation.SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>NoNewLine</maml:name>
+          <maml:description>
+            <maml:para>Prevent trailing line sequences in converted output</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>System.Management.Automation.SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="After">
+        <maml:name>AfterBlock</maml:name>
+        <maml:description>
+          <maml:para>An after block is a scriptblock with ominous attributes declared of which the content provided to it will be styled by</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">Ominous.Model.AfterBlock[]</command:parameterValue>
+        <dev:type>
+          <maml:name>Ominous.Model.AfterBlock[]</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>NoMappers</maml:name>
+        <maml:description>
+          <maml:para>Coerce conversion to not pass input objects to type mappers, even if they are defined</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">System.Management.Automation.SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>System.Management.Automation.SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>NoNewLine</maml:name>
+        <maml:description>
+          <maml:para>Prevent trailing line sequences in converted output</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">System.Management.Automation.SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>System.Management.Automation.SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="Title">
+        <maml:name>Summary</maml:name>
+        <maml:description>
+          <maml:para>The description of the drop down caption</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+        <dev:type>
+          <maml:name>System.String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="0" aliases="none">
+        <maml:name>Value</maml:name>
+        <maml:description>
+          <maml:para>Nullable string to convert to markdown</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+        <dev:type>
+          <maml:name>System.String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes>
+      <command:inputType>
+        <dev:type>
+          <maml:name>System.String</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:inputType>
+    </command:inputTypes>
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name>System.String</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- Example 1 --------------------------</maml:title>
+        <dev:code>PS D:\&gt; 'This is the content' | ConvertTo-Details
+
+&lt;details&gt;
+&lt;summary&gt;Details&lt;/summary&gt;
+
+This is the content
+&lt;/details&gt;</dev:code>
+        <dev:remarks>
+          <maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 2 --------------------------</maml:title>
+        <dev:code>PS D:\&gt; 'This is the content' | ConvertTo-Details -Summary 'Click to reveal content'
+
+&lt;details&gt;
+&lt;summary&gt;Click to reveal content&lt;/summary&gt;
+
+This is the content
+&lt;/details&gt;</dev:code>
+        <dev:remarks>
+          <maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Online Version:</maml:linkText>
+        <maml:uri>https://github.com/soulshined/OMINOUS/blob/master/publish/generate-docs/cmdlets/ConvertTo-Details.md</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details</maml:linkText>
+        <maml:uri>https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>https://github.com/soulshined/OMINOUS/wiki/After-Blocks</maml:linkText>
+        <maml:uri>https://github.com/soulshined/OMINOUS/wiki/After-Blocks</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>https://github.com/soulshined/OMINOUS/wiki/Attributes</maml:linkText>
+        <maml:uri>https://github.com/soulshined/OMINOUS/wiki/Attributes</maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>ConvertTo-Heading</command:name>
+      <command:verb>ConvertTo</command:verb>
+      <command:noun>Heading</command:noun>
+      <maml:description>
+        <maml:para>Convert to markdown header syntax</maml:para>
+        <maml:para>Mnemonic Aliases: `H1`, `H2`, `H3`, `H4`, `H5`, `H6`, `Header`, `Heading`</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>Create a heading element and optionally provide a custom id (anchor)</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>ConvertTo-Heading</maml:name>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="0" aliases="none">
+          <maml:name>Value</maml:name>
+          <maml:description>
+            <maml:para>Nullable string to convert to markdown</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+          <dev:type>
+            <maml:name>System.String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
+          <maml:name>Level</maml:name>
+          <maml:description>
+            <maml:para>The header level (1-6)</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">System.Int32</command:parameterValue>
+          <dev:type>
+            <maml:name>System.Int32</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="2" aliases="none">
+          <maml:name>Id</maml:name>
+          <maml:description>
+            <maml:para>Specify a specific anchor name</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+          <dev:type>
+            <maml:name>System.String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="After">
+          <maml:name>AfterBlock</maml:name>
+          <maml:description>
+            <maml:para>An after block is a scriptblock with ominous attributes declared of which the content provided to it will be styled by</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">Ominous.Model.AfterBlock[]</command:parameterValue>
+          <dev:type>
+            <maml:name>Ominous.Model.AfterBlock[]</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>NoMappers</maml:name>
+          <maml:description>
+            <maml:para>Coerce conversion to not pass input objects to type mappers, even if they are defined</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>System.Management.Automation.SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>NoNewLine</maml:name>
+          <maml:description>
+            <maml:para>Prevent trailing line sequences in converted output</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>System.Management.Automation.SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="After">
+        <maml:name>AfterBlock</maml:name>
+        <maml:description>
+          <maml:para>An after block is a scriptblock with ominous attributes declared of which the content provided to it will be styled by</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">Ominous.Model.AfterBlock[]</command:parameterValue>
+        <dev:type>
+          <maml:name>Ominous.Model.AfterBlock[]</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="2" aliases="none">
+        <maml:name>Id</maml:name>
+        <maml:description>
+          <maml:para>Specify a specific anchor name</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+        <dev:type>
+          <maml:name>System.String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
+        <maml:name>Level</maml:name>
+        <maml:description>
+          <maml:para>The header level (1-6)</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">System.Int32</command:parameterValue>
+        <dev:type>
+          <maml:name>System.Int32</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>NoMappers</maml:name>
+        <maml:description>
+          <maml:para>Coerce conversion to not pass input objects to type mappers, even if they are defined</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">System.Management.Automation.SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>System.Management.Automation.SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>NoNewLine</maml:name>
+        <maml:description>
+          <maml:para>Prevent trailing line sequences in converted output</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">System.Management.Automation.SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>System.Management.Automation.SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="0" aliases="none">
+        <maml:name>Value</maml:name>
+        <maml:description>
+          <maml:para>Nullable string to convert to markdown</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+        <dev:type>
+          <maml:name>System.String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes>
+      <command:inputType>
+        <dev:type>
+          <maml:name>System.String</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:inputType>
+    </command:inputTypes>
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name>System.String</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- Example 1 --------------------------</maml:title>
+        <dev:code>PS D:\&gt; 'Hello World' | ConvertTo-Heading"
+
+# Hello World</dev:code>
+        <dev:remarks>
+          <maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 2 --------------------------</maml:title>
+        <dev:code>PS D:\&gt; 'Hello World' | ConvertTo-Heading -Level 3
+
+### Hello World</dev:code>
+        <dev:remarks>
+          <maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 3 --------------------------</maml:title>
+        <dev:code>PS D:\&gt; 'Hello World' | H2 -Id 'greeting'
+
+## Hello World {#greeting}</dev:code>
+        <dev:remarks>
+          <maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Online Version:</maml:linkText>
+        <maml:uri>https://github.com/soulshined/OMINOUS/blob/master/publish/generate-docs/cmdlets/ConvertTo-Heading.md</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>https://github.com/soulshined/OMINOUS/wiki/After-Blocks</maml:linkText>
+        <maml:uri>https://github.com/soulshined/OMINOUS/wiki/After-Blocks</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>https://github.com/soulshined/OMINOUS/wiki/Attributes</maml:linkText>
+        <maml:uri>https://github.com/soulshined/OMINOUS/wiki/Attributes</maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>ConvertTo-Image</command:name>
+      <command:verb>ConvertTo</command:verb>
+      <command:noun>Image</command:noun>
+      <maml:description>
+        <maml:para>Convert to markdown image syntax</maml:para>
+        <maml:para>Mnemonic Aliases: `Image`</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>Convert a item to a markdown image element</maml:para>
+      <maml:para>The syntax is as follows:</maml:para>
+      <maml:para>`! &lt;alt?&gt; (&lt;src&gt; "&lt;title?&gt;")`&lt;br&gt; `&lt;caption?&gt;`</maml:para>
+      <maml:para>- Where if alt is not provided, the title is used for the alt</maml:para>
+      <maml:para>- Where if title is not provided, the url is used for the alt</maml:para>
+      <maml:para></maml:para>
+      <maml:para>This command supports creating clickable images by wrapping them in link syntax:</maml:para>
+      <maml:para>` ![&lt;alt?&gt; (&lt;src&gt; "&lt;title?&gt;")](&lt;link&gt;)`</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>ConvertTo-Image</maml:name>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="0" aliases="none">
+          <maml:name>Value</maml:name>
+          <maml:description>
+            <maml:para>Nullable string to convert to markdown</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+          <dev:type>
+            <maml:name>System.String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="After">
+          <maml:name>AfterBlock</maml:name>
+          <maml:description>
+            <maml:para>An after block is a scriptblock with ominous attributes declared of which the content provided to it will be styled by</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">Ominous.Model.AfterBlock[]</command:parameterValue>
+          <dev:type>
+            <maml:name>Ominous.Model.AfterBlock[]</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>Alt</maml:name>
+          <maml:description>
+            <maml:para>The alt of an image link (defaults to title first, then url): `!\ \&lt;alt?\&gt;\ (\&lt;url\&gt; "\&lt;title?\&gt;")`</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+          <dev:type>
+            <maml:name>System.String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>Caption</maml:name>
+          <maml:description>
+            <maml:para>The caption applied under a link (optional)</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+          <dev:type>
+            <maml:name>System.String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>Link</maml:name>
+          <maml:description>
+            <maml:para>The url of an image link: `!\ \&lt;alt?\&gt;\ (\&lt;url\&gt; "\&lt;title?\&gt;")`</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+          <dev:type>
+            <maml:name>System.String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>NoMappers</maml:name>
+          <maml:description>
+            <maml:para>Coerce conversion to not pass input objects to type mappers, even if they are defined</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>System.Management.Automation.SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>NoNewLine</maml:name>
+          <maml:description>
+            <maml:para>Prevent trailing line sequences in converted output</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>System.Management.Automation.SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>Title</maml:name>
+          <maml:description>
+            <maml:para>The title of an image link (optional): `!\ \&lt;alt?\&gt;\ (\&lt;url\&gt; "\&lt;title?\&gt;")`</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+          <dev:type>
+            <maml:name>System.String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="After">
+        <maml:name>AfterBlock</maml:name>
+        <maml:description>
+          <maml:para>An after block is a scriptblock with ominous attributes declared of which the content provided to it will be styled by</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">Ominous.Model.AfterBlock[]</command:parameterValue>
+        <dev:type>
+          <maml:name>Ominous.Model.AfterBlock[]</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>Alt</maml:name>
+        <maml:description>
+          <maml:para>The alt of an image link (defaults to title first, then url): `!\ \&lt;alt?\&gt;\ (\&lt;url\&gt; "\&lt;title?\&gt;")`</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+        <dev:type>
+          <maml:name>System.String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>Caption</maml:name>
+        <maml:description>
+          <maml:para>The caption applied under a link (optional)</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+        <dev:type>
+          <maml:name>System.String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>Link</maml:name>
+        <maml:description>
+          <maml:para>The url of an image link: `!\ \&lt;alt?\&gt;\ (\&lt;url\&gt; "\&lt;title?\&gt;")`</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+        <dev:type>
+          <maml:name>System.String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>NoMappers</maml:name>
+        <maml:description>
+          <maml:para>Coerce conversion to not pass input objects to type mappers, even if they are defined</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">System.Management.Automation.SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>System.Management.Automation.SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>NoNewLine</maml:name>
+        <maml:description>
+          <maml:para>Prevent trailing line sequences in converted output</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">System.Management.Automation.SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>System.Management.Automation.SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>Title</maml:name>
+        <maml:description>
+          <maml:para>The title of an image link (optional): `!\ \&lt;alt?\&gt;\ (\&lt;url\&gt; "\&lt;title?\&gt;")`</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+        <dev:type>
+          <maml:name>System.String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="0" aliases="none">
+        <maml:name>Value</maml:name>
+        <maml:description>
+          <maml:para>Nullable string to convert to markdown</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+        <dev:type>
+          <maml:name>System.String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes>
+      <command:inputType>
+        <dev:type>
+          <maml:name>System.String</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:inputType>
+    </command:inputTypes>
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name>System.String</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- Example 1 --------------------------</maml:title>
+        <dev:code>PS D:\&gt; '/assets/images/foobar.png' | ConvertTo-Image -Alt 'Beautiful Sunset'
+
+![Beautiful Sunset](/assets/images/foobar.png)</dev:code>
+        <dev:remarks>
+          <maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 2 --------------------------</maml:title>
+        <dev:code>PS D:\&gt; '/assets/images/foobar.png' | ConvertTo-Image -Alt 'Beautiful Sunset' -Caption 'Beautiful Sunset'
+
+![Beautiful Sunset](/assets/images/foobar.png)
+*Beautiful Sunset*</dev:code>
+        <dev:remarks>
+          <maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 3 --------------------------</maml:title>
+        <dev:code>PS D:\&gt; '/assets/images/foobar.png' | ConvertTo-Image -Alt 'Beautiful Sunset' -Caption 'Beautiful Sunset' -Title 'My Beautiful Sunset'
+
+![Beautiful Sunset](/assets/images/foobar.png "My Beautiful Sunset")
+*Beautiful Sunset*</dev:code>
+        <dev:remarks>
+          <maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 4 --------------------------</maml:title>
+        <dev:code>PS D:\&gt; '/assets/images/foobar.png' | ConvertTo-Image -Alt 'Beautiful Sunset' -Link 'https://full.link.to.image.com/foobar.png'
+
+[![Beautiful Sunset](/assets/images/foobar.png)](https://full.link.to.image.com/foobar.png)</dev:code>
+        <dev:remarks>
+          <maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 5 --------------------------</maml:title>
+        <dev:code>PS D:\&gt; '/assets/images/foobar.png' | ConvertTo-Image -Alt 'Beautiful Sunset' -Link 'https://full.link.to.image.com/foobar.png' -Title 'My Beautiful Sunset'"
+
+[![Beautiful Sunset](/assets/images/foobar.png "My Beautiful Sunset")](https://full.link.to.image.com/foobar.png)</dev:code>
+        <dev:remarks>
+          <maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 6 --------------------------</maml:title>
+        <dev:code>PS D:\&gt; '/assets/images/foobar.png' | ConvertTo-Image -Alt 'Beautiful Sunset' -Caption 'Beautiful Sunset' -Link 'https://full.link.to.image.com/foobar.png' -Title 'My Beautiful Sunset'
+
+[![Beautiful Sunset](/assets/images/foobar.png "My Beautiful Sunset")](https://full.link.to.image.com/foobar.png)
+*Beautiful Sunset*</dev:code>
+        <dev:remarks>
+          <maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Online Version:</maml:linkText>
+        <maml:uri>https://github.com/soulshined/OMINOUS/blob/master/publish/generate-docs/cmdlets/ConvertTo-Image.md</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>https://github.com/soulshined/OMINOUS/wiki/After-Blocks</maml:linkText>
+        <maml:uri>https://github.com/soulshined/OMINOUS/wiki/After-Blocks</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>https://github.com/soulshined/OMINOUS/wiki/Attributes</maml:linkText>
+        <maml:uri>https://github.com/soulshined/OMINOUS/wiki/Attributes</maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>ConvertTo-Link</command:name>
+      <command:verb>ConvertTo</command:verb>
+      <command:noun>Link</command:noun>
+      <maml:description>
+        <maml:para>Convert to markdown link syntax</maml:para>
+        <maml:para>Mnemonic Aliases: `Link`</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>Create a link and optionally set the link title</maml:para>
+      <maml:para>You can coerce the link to open a new browser tab `-NewTab`, but mind that that switch explicitly outputs html</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>ConvertTo-Link</maml:name>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="0" aliases="none">
+          <maml:name>Value</maml:name>
+          <maml:description>
+            <maml:para>Nullable string to convert to markdown</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+          <dev:type>
+            <maml:name>System.String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
+          <maml:name>Title</maml:name>
+          <maml:description>
+            <maml:para>Display title of link (optional)</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+          <dev:type>
+            <maml:name>System.String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="After">
+          <maml:name>AfterBlock</maml:name>
+          <maml:description>
+            <maml:para>An after block is a scriptblock with ominous attributes declared of which the content provided to it will be styled by</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">Ominous.Model.AfterBlock[]</command:parameterValue>
+          <dev:type>
+            <maml:name>Ominous.Model.AfterBlock[]</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>NewTab</maml:name>
+          <maml:description>
+            <maml:para>Coerces a link to be an explicit HTML &lt;a&gt; tag with a _blank target attr value</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>System.Management.Automation.SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>NoMappers</maml:name>
+          <maml:description>
+            <maml:para>Coerce conversion to not pass input objects to type mappers, even if they are defined</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>System.Management.Automation.SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>NoNewLine</maml:name>
+          <maml:description>
+            <maml:para>Prevent trailing line sequences in converted output</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>System.Management.Automation.SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="After">
+        <maml:name>AfterBlock</maml:name>
+        <maml:description>
+          <maml:para>An after block is a scriptblock with ominous attributes declared of which the content provided to it will be styled by</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">Ominous.Model.AfterBlock[]</command:parameterValue>
+        <dev:type>
+          <maml:name>Ominous.Model.AfterBlock[]</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>NewTab</maml:name>
+        <maml:description>
+          <maml:para>Coerces a link to be an explicit HTML &lt;a&gt; tag with a _blank target attr value</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">System.Management.Automation.SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>System.Management.Automation.SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>NoMappers</maml:name>
+        <maml:description>
+          <maml:para>Coerce conversion to not pass input objects to type mappers, even if they are defined</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">System.Management.Automation.SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>System.Management.Automation.SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>NoNewLine</maml:name>
+        <maml:description>
+          <maml:para>Prevent trailing line sequences in converted output</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">System.Management.Automation.SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>System.Management.Automation.SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
+        <maml:name>Title</maml:name>
+        <maml:description>
+          <maml:para>Display title of link (optional)</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+        <dev:type>
+          <maml:name>System.String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="0" aliases="none">
+        <maml:name>Value</maml:name>
+        <maml:description>
+          <maml:para>Nullable string to convert to markdown</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+        <dev:type>
+          <maml:name>System.String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes>
+      <command:inputType>
+        <dev:type>
+          <maml:name>System.String</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:inputType>
+    </command:inputTypes>
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name>System.String</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- Example 1 --------------------------</maml:title>
+        <dev:code>PS D:\&gt; 'http://example.com'
+
+http://example.com</dev:code>
+        <dev:remarks>
+          <maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 2 --------------------------</maml:title>
+        <dev:code>PS D:\&gt; 'http://example.com' -Title foobar
+
+[foobar](http://example.com)</dev:code>
+        <dev:remarks>
+          <maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 3 --------------------------</maml:title>
+        <dev:code>PS D:\&gt; 'http://example.com' -NewTab
+
+&lt;a href="http://example.com" target="_blank"&gt;http://example.com&lt;/a&gt;</dev:code>
+        <dev:remarks>
+          <maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 4 --------------------------</maml:title>
+        <dev:code>PS D:\&gt; 'http://example.com' -Title foobar -NewTab
+
+&lt;a href="http://example.com" target="_blank"&gt;foobar&lt;/a&gt;</dev:code>
+        <dev:remarks>
+          <maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Online Version:</maml:linkText>
+        <maml:uri>https://github.com/soulshined/OMINOUS/blob/master/publish/generate-docs/cmdlets/ConvertTo-Link.md</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>https://github.com/soulshined/OMINOUS/wiki/After-Blocks</maml:linkText>
+        <maml:uri>https://github.com/soulshined/OMINOUS/wiki/After-Blocks</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>https://github.com/soulshined/OMINOUS/wiki/Attributes</maml:linkText>
+        <maml:uri>https://github.com/soulshined/OMINOUS/wiki/Attributes</maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>ConvertTo-List</command:name>
+      <command:verb>ConvertTo</command:verb>
+      <command:noun>List</command:noun>
+      <maml:description>
+        <maml:para>Convert to markdown list syntax</maml:para>
+        <maml:para>Mnemonic Aliases: `List`, `OrderedList`, `TaskList`, `UnorderedList`</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>This command supports unordered lists, ordered lists, ordered list starting at specific number, and task lists</maml:para>
+      <maml:para>This command, additionally, inherently supports nested lists</maml:para>
+      <maml:para>This command has dynamic parameters</maml:para>
+      <maml:para>The default list type is unordered list</maml:para>
+      <maml:para>This command automatically escapes a trailing period for list value that has text of starting with a number (like a year)</maml:para>
+      <maml:para>Refer to examples for understanding</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>ConvertTo-List</maml:name>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="0" aliases="none">
+          <maml:name>InputObject</maml:name>
+          <maml:description>
+            <maml:para>object to convert to markdown</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">System.Management.Automation.PSObject</command:parameterValue>
+          <dev:type>
+            <maml:name>System.Management.Automation.PSObject</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="After">
+          <maml:name>AfterBlock</maml:name>
+          <maml:description>
+            <maml:para>An after block is a scriptblock with ominous attributes declared of which the content provided to it will be styled by</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">Ominous.Model.AfterBlock[]</command:parameterValue>
+          <dev:type>
+            <maml:name>Ominous.Model.AfterBlock[]</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>NoMappers</maml:name>
+          <maml:description>
+            <maml:para>Coerce conversion to not pass input objects to type mappers, even if they are defined</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>System.Management.Automation.SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>NoNewLine</maml:name>
+          <maml:description>
+            <maml:para>Prevent trailing line sequences in converted output</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>System.Management.Automation.SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="After">
+        <maml:name>AfterBlock</maml:name>
+        <maml:description>
+          <maml:para>An after block is a scriptblock with ominous attributes declared of which the content provided to it will be styled by</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">Ominous.Model.AfterBlock[]</command:parameterValue>
+        <dev:type>
+          <maml:name>Ominous.Model.AfterBlock[]</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="0" aliases="none">
+        <maml:name>InputObject</maml:name>
+        <maml:description>
+          <maml:para>object to convert to markdown</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">System.Management.Automation.PSObject</command:parameterValue>
+        <dev:type>
+          <maml:name>System.Management.Automation.PSObject</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>NoMappers</maml:name>
+        <maml:description>
+          <maml:para>Coerce conversion to not pass input objects to type mappers, even if they are defined</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">System.Management.Automation.SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>System.Management.Automation.SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>NoNewLine</maml:name>
+        <maml:description>
+          <maml:para>Prevent trailing line sequences in converted output</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">System.Management.Automation.SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>System.Management.Automation.SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes>
+      <command:inputType>
+        <dev:type>
+          <maml:name>System.Management.Automation.PSObject</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:inputType>
+    </command:inputTypes>
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name>System.String</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- Example 1 --------------------------</maml:title>
+        <dev:code>PS D:\&gt; 'one','three','five','seven' | ConvertTo-List
+
+- one
+- three
+- five
+- seven</dev:code>
+        <dev:remarks>
+          <maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 2 --------------------------</maml:title>
+        <dev:code>PS D:\&gt; 'one','1998. three','five','seven' | ConvertTo-List
+
+- one
+- 1998\. three
+- five
+- seven</dev:code>
+        <dev:remarks>
+          <maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 3 --------------------------</maml:title>
+        <dev:code>PS D:\&gt; 'one','three',@('five','seven') | ConvertTo-List
+
+- one
+- three
+  - five
+  - seven</dev:code>
+        <dev:remarks>
+          <maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 4 --------------------------</maml:title>
+        <dev:code>PS D:\&gt; 'one','three','five','seven' | OrderedList
+
+1. one
+2. three
+3. five
+4. seven</dev:code>
+        <dev:remarks>
+          <maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 5 --------------------------</maml:title>
+        <dev:code>PS D:\&gt; @('one','three','five','seven') | OrderedList -Start 4
+
+4. one
+5. three
+6. five
+7. seven</dev:code>
+        <dev:remarks>
+          <maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 6 --------------------------</maml:title>
+        <dev:code>PS D:\&gt; 'one','three',@('five','seven') | OrderedList
+
+1. one
+2. three
+  1. five
+  2. seven</dev:code>
+        <dev:remarks>
+          <maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 7 --------------------------</maml:title>
+        <dev:code>PS D:\&gt; 'one','three',@('five','seven') | OrderedList -Start 4
+
+4. one
+5. three
+  1. five
+  2. seven</dev:code>
+        <dev:remarks>
+          <maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 8 --------------------------</maml:title>
+        <dev:code>PS D:\&gt; 'one','three','five','seven' | TaskList
+
+- [ ] one
+- [ ] three
+- [ ] five
+- [ ] seven</dev:code>
+        <dev:remarks>
+          <maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 9 --------------------------</maml:title>
+        <dev:code>PS D:\&gt; 'one','three',@('five','seven') | TaskList
+
+- [ ] one
+- [ ] three
+  - [ ] five
+  - [ ] seven</dev:code>
+        <dev:remarks>
+          <maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 10 --------------------------</maml:title>
+        <dev:code>PS D:\&gt; [ordered]@{ Value = 'one'; Bone = 19; Freed = $false },'three','five','seven' | TaskList
+
+- [ ] one
+- [ ] three
+- [ ] five
+- [ ] seven</dev:code>
+        <dev:remarks>
+          <maml:para>When a dictionary is provided, a key with 'Value' will always take precedence</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 11 --------------------------</maml:title>
+        <dev:code>PS D:\&gt; 'one',@('three', $true),'five','seven' | TaskList
+
+- [ ] one
+- [x] three
+- [ ] five
+- [ ] seven</dev:code>
+        <dev:remarks>
+          <maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 12 --------------------------</maml:title>
+        <dev:code>PS D:\&gt; [ordered]@{ Value = 'one'; Checked = $true },'three','five','seven' | TaskList
+
+- [x] one
+- [ ] three
+- [ ] five
+- [ ] seven</dev:code>
+        <dev:remarks>
+          <maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 13 --------------------------</maml:title>
+        <dev:code>PS D:\&gt; [ordered]@{Bone='tail';Checked=$	rue;Nested=[ordered]@{A='b';B='a';}},'three','five','seven' | TaskList
+
+- [ ] Bone: tail
+- [ ] Checked: True
+- [ ] Nested
+  - [ ] A: b
+  - [ ] B: a
+- [ ] three
+- [ ] five
+- [ ] seven</dev:code>
+        <dev:remarks>
+          <maml:para>There is no 'Value' property in the dictionary therefore it's converted to a normal key-value pair list</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Online Version:</maml:linkText>
+        <maml:uri>https://github.com/soulshined/OMINOUS/blob/master/publish/generate-docs/cmdlets/ConvertTo-List.md</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>https://github.com/soulshined/OMINOUS/wiki/After-Blocks</maml:linkText>
+        <maml:uri>https://github.com/soulshined/OMINOUS/wiki/After-Blocks</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>https://github.com/soulshined/OMINOUS/wiki/Attributes</maml:linkText>
+        <maml:uri>https://github.com/soulshined/OMINOUS/wiki/Attributes</maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>ConvertTo-Table</command:name>
+      <command:verb>ConvertTo</command:verb>
+      <command:noun>Table</command:noun>
+      <maml:description>
+        <maml:para>Convert to markdown table syntax</maml:para>
+        <maml:para>Mnemonic Aliases: `Table`</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>This command inherently supports nested tables This command also supports column definitions, though it's important to understand column definitions currently only exist for the top most table</maml:para>
+      <maml:para>You can define a column definition to change it's alignment property or label</maml:para>
+      <maml:para>When using column definitions, the first definition will always be applied to the first column header, the second will always belong to the second and so forth. However, you can use dictionaries to create definitions, and these are matched by the Name property to the Column header value. Anything not defined in a dictionary then proceeds to be applied in the same order as before</maml:para>
+      <maml:para>This command is a great candidate on why Type Mappers can be valuable. You can make more succinct controlled tables by creating a Type Mapper and that mapped object will always be used for every table object that supports it</maml:para>
+      <maml:para>Refer to Type Mapper Wiki (https://github.com/soulshined/OMINOUS/wiki/Type-Mapper)for understanding</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>ConvertTo-Table</maml:name>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="0" aliases="none">
+          <maml:name>InputObject</maml:name>
+          <maml:description>
+            <maml:para>object to convert to markdown</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">System.Management.Automation.PSObject</command:parameterValue>
+          <dev:type>
+            <maml:name>System.Management.Automation.PSObject</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
+          <maml:name>ColumnDefinitions</maml:name>
+          <maml:description>
+            <maml:para>Definitions of column alignment/labeling</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">System.Collections.Generic.List`1[Ominous.Model.Table.ColumnDefinition]</command:parameterValue>
+          <dev:type>
+            <maml:name>System.Collections.Generic.List`1[Ominous.Model.Table.ColumnDefinition]</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="After">
+          <maml:name>AfterBlock</maml:name>
+          <maml:description>
+            <maml:para>An after block is a scriptblock with ominous attributes declared of which the content provided to it will be styled by</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">Ominous.Model.AfterBlock[]</command:parameterValue>
+          <dev:type>
+            <maml:name>Ominous.Model.AfterBlock[]</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>NoMappers</maml:name>
+          <maml:description>
+            <maml:para>Coerce conversion to not pass input objects to type mappers, even if they are defined</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>System.Management.Automation.SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>NoNewLine</maml:name>
+          <maml:description>
+            <maml:para>Prevent trailing line sequences in converted output</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>System.Management.Automation.SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="After">
+        <maml:name>AfterBlock</maml:name>
+        <maml:description>
+          <maml:para>An after block is a scriptblock with ominous attributes declared of which the content provided to it will be styled by</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">Ominous.Model.AfterBlock[]</command:parameterValue>
+        <dev:type>
+          <maml:name>Ominous.Model.AfterBlock[]</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
+        <maml:name>ColumnDefinitions</maml:name>
+        <maml:description>
+          <maml:para>Definitions of column alignment/labeling</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">System.Collections.Generic.List`1[Ominous.Model.Table.ColumnDefinition]</command:parameterValue>
+        <dev:type>
+          <maml:name>System.Collections.Generic.List`1[Ominous.Model.Table.ColumnDefinition]</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="0" aliases="none">
+        <maml:name>InputObject</maml:name>
+        <maml:description>
+          <maml:para>object to convert to markdown</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">System.Management.Automation.PSObject</command:parameterValue>
+        <dev:type>
+          <maml:name>System.Management.Automation.PSObject</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>NoMappers</maml:name>
+        <maml:description>
+          <maml:para>Coerce conversion to not pass input objects to type mappers, even if they are defined</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">System.Management.Automation.SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>System.Management.Automation.SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>NoNewLine</maml:name>
+        <maml:description>
+          <maml:para>Prevent trailing line sequences in converted output</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">System.Management.Automation.SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>System.Management.Automation.SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes>
+      <command:inputType>
+        <dev:type>
+          <maml:name>System.Management.Automation.PSObject</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:inputType>
+    </command:inputTypes>
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name>System.String</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- Example 1 --------------------------</maml:title>
+        <dev:code>[ordered]@{
+    Name = "Foobar";
+    Age = 11;
+    Bio = "[example](http://example.com)";
+} | ConvertTo-Table
+
+| Name | Age | Bio |
+| - | - | - |
+| Foobar | 11 | [example](http://example.com) |</dev:code>
+        <dev:remarks>
+          <maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 2 --------------------------</maml:title>
+        <dev:code>[ordered]@{
+    Name = "Foobar";
+    Age = 11;
+    Bio = "[example](http://example.com)";
+    Siblings = @([ordered]@{
+        Name = 'Jteve Sobs';
+        Age = 99;
+    },[ordered]@{
+        Name = 'Sichard Rimmons';
+        Age = 5;
+    },[ordered]@{
+        Name = 'Gill Bates';
+        Age = 1995;
+    })
+} | ConvertTo-Table
+
+| Name | Age | Bio | Siblings |
+| - | - | - | - |
+| Foobar | 11 | [example](http://example.com) | &lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Name&lt;/th&gt;&lt;th&gt;Age&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;Jteve Sobs&lt;/td&gt;&lt;td&gt;99&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Sichard Rimmons&lt;/td&gt;&lt;td&gt;5&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Gill Bates&lt;/td&gt;&lt;td&gt;1995&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt; |</dev:code>
+        <dev:remarks>
+          <maml:para>This example produces a nested table automatically for nested key value pairs</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 3 --------------------------</maml:title>
+        <dev:code>[ordered]@{
+    Name = "Foobar";
+    Age = 11;
+    Bio = "[example](http://example.com)";
+    Siblings = 'Jteve Sobs','Sichard Rimmons',[ordered]@{
+        Name = 'Gill Bates';
+        Age = 1995;
+    }
+} | ConvertTo-Table
+
+| Name | Age | Bio | Siblings |
+| - | - | - | - |
+| Foobar | 11 | [example](http://example.com) | &lt;ul&gt;&lt;li&gt;Jteve Sobs&lt;/li&gt;&lt;li&gt;Sichard Rimmons&lt;/li&gt;&lt;li&gt;&lt;ul&gt;&lt;li&gt;Name: Gill Bates&lt;/li&gt;&lt;li&gt;Age: 1995&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt; |</dev:code>
+        <dev:remarks>
+          <maml:para>This example demonstrates an iterable object with different data typed values</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 4 --------------------------</maml:title>
+        <dev:code>[ordered]@{
+    Name = "Foobazz";
+    Age = 11;
+    Bio = "[example](http://example.com)";
+    Father = [ordered]@{
+        Name = 'Jteve Sobs';
+        Age = 99;
+    }
+} | Table -ColumnDefinitions Right,Center,Center,Center
+
+| Name | Age | Bio | Father |
+| -: | :-: | :-: | :-: |
+| Foobazz | 11 | [example](http://example.com) | &lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Name&lt;/th&gt;&lt;th&gt;Age&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;Jteve Sobs&lt;/td&gt;&lt;td&gt;99&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt; |</dev:code>
+        <dev:remarks>
+          <maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 5 --------------------------</maml:title>
+        <dev:code>[ordered]@{
+    Name = "Foobar";
+    Age = 11;
+    Bio = "[example](http://example.com)";
+    Father = [ordered]@{
+        Name = 'Jteve Sobs';
+        Age = 99;
+    }
+} | Table -ColumnDefinitions @{ Name = "Age"; Alignment = "Center"}
+
+| Name | Age | Bio | Father |
+| - | :-: | - | - |
+| Foobar | 11 | [example](http://example.com) | &lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Name&lt;/th&gt;&lt;th&gt;Age&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;Jteve Sobs&lt;/td&gt;&lt;td&gt;99&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt; |</dev:code>
+        <dev:remarks>
+          <maml:para>This example demonstrates setting a column definition by it's matching name (via dictionary)</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 6 --------------------------</maml:title>
+        <dev:code>[ordered]@{
+    Name = "Foobazz";
+    Age = 11;
+    Bio = "[example](http://example.com)";
+    Father = [ordered]@{
+        Name = 'Jteve Sobs';
+        Age = 99;
+    }
+} | Table -ColumnDefinitions @{ Name = "Bio"; Alignment = "Right"; Label = "Biography Link"},Center,Center,Center
+
+| Name | Age | Biography Link | Father |
+| :-: | :-: | -: | :-: |
+| Foobazz | 11 | [example](http://example.com) | &lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Name&lt;/th&gt;&lt;th&gt;Age&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;Jteve Sobs&lt;/td&gt;&lt;td&gt;99&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt; |</dev:code>
+        <dev:remarks>
+          <maml:para>This example demonstrates how to re-label a given column header name</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Online Version:</maml:linkText>
+        <maml:uri>https://github.com/soulshined/OMINOUS/blob/master/publish/generate-docs/cmdlets/ConvertTo-Table.md</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>https://github.com/soulshined/OMINOUS/wiki/Type-Mapper</maml:linkText>
+        <maml:uri>https://github.com/soulshined/OMINOUS/wiki/Type-Mapper</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>https://github.com/soulshined/OMINOUS/wiki/After-Blocks</maml:linkText>
+        <maml:uri>https://github.com/soulshined/OMINOUS/wiki/After-Blocks</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>https://github.com/soulshined/OMINOUS/wiki/Attributes</maml:linkText>
+        <maml:uri>https://github.com/soulshined/OMINOUS/wiki/Attributes</maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+</helpItems>

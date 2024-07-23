@@ -1,0 +1,13 @@
+=== Given ===
+
+$AfterBlock = {
+    [Style.Indent(2)]
+    param()
+}
+
+'foo','buzz' | List -After $AfterBlock
+
+=== Expect
+
+- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;foo
+- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;buzz

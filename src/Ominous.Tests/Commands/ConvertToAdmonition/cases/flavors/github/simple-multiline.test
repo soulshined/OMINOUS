@@ -1,0 +1,15 @@
+=== Given
+type: expression
+===
+
+$global:OminousPreference = @{ Flavor = 'GitHub' }
+@("This is a note"," ","This note has multiple lines"," ","This note is just a note") -join "`n" | Admonition
+
+=== Expect
+
+> [!NOTE]
+> This is a note
+> 
+> This note has multiple lines
+> 
+> This note is just a note

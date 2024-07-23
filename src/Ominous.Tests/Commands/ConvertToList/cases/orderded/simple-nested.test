@@ -1,0 +1,12 @@
+=== Given
+type: expression
+===
+
+'one','three',@('five','seven') | OrderedList
+
+=== Expect
+
+1. one
+2. three
+  1. five
+  2. seven

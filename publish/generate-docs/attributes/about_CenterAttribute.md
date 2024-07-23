@@ -1,0 +1,1 @@
+Centers a markdown element

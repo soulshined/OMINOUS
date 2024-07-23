@@ -1,0 +1,9 @@
+Commands:
+    ☐ Mermaid Diagram
+    ☐ TOC
+
+AfterBlocks:
+    Support:
+        ☐ Conditional AfterBlocks (maybe with predicates)
+        ☐ And/or match conditions (only if text matches)
+    ☐ Figure out a sane way to cascade AfterBlocks to lowest level

@@ -1,0 +1,10 @@
+=== Given
+type: expression
+===
+
+'/assets/images/foobar.png' | Image -Caption 'Beautiful Sunset' -Link 'https://full.link.to.image.com/foobar.png'
+
+=== Expect
+
+[![/assets/images/foobar.png](/assets/images/foobar.png)](https://full.link.to.image.com/foobar.png)
+*Beautiful Sunset*

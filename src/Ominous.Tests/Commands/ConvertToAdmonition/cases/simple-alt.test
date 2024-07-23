@@ -1,0 +1,12 @@
+=== Given
+type: expression
+===
+
+'This is first note','This is second note' | Admonition
+
+=== Expect
+
+> :spiral_notepad: This is first note
+
+
+> :spiral_notepad: This is second note

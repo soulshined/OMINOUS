@@ -1,0 +1,10 @@
+=== Given
+type: expression
+===
+
+'/assets/images/foobar.png' | Image -Alt 'Beautiful Sunset' -Caption 'Beautiful Sunset' -Title 'My Beautiful Sunset'
+
+=== Expect
+
+![Beautiful Sunset](/assets/images/foobar.png "My Beautiful Sunset")
+*Beautiful Sunset*

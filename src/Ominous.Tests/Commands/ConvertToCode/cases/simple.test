@@ -1,0 +1,29 @@
+=== Given ===
+
+@"
+public override string ToMarkdown(FlavorType flavor)
+{
+    StringBuilder sb = new();
+
+    sb.Append(BACKTICKS).AppendLine(Language != null ? "Language" : BACKTICKS)
+        .AppendLine(ExecAfterBlocks(Value))
+        .AppendLine(BACKTICKS);
+
+    return sb.ToString();
+}
+"@
+
+=== Expect
+
+```
+public override string ToMarkdown(FlavorType flavor)
+{
+    StringBuilder sb = new();
+
+    sb.Append(BACKTICKS).AppendLine(Language != null ? "Language" : BACKTICKS)
+        .AppendLine(ExecAfterBlocks(Value))
+        .AppendLine(BACKTICKS);
+
+    return sb.ToString();
+}
+```

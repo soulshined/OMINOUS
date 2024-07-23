@@ -1,0 +1,13 @@
+=== Given
+type: expression
+===
+
+@("This is a note"," ","This note has multiple lines"," ","This note is just a note") -join "`n" | Admonition
+
+=== Expect
+
+> :spiral_notepad: This is a note
+> 
+> This note has multiple lines
+> 
+> This note is just a note

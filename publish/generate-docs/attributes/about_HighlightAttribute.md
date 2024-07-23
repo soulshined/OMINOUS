@@ -1,0 +1,1 @@
+Highlights a markdown element

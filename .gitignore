@@ -1,0 +1,18 @@
+# resetting global ignores
+.vscode/**
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/ps.ps1
+!.vscode/pwsh.code-snippets
+!.vscode/cs.code-snippets
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/PSScriptAnalyzerSettings.psd1
+
+!*.todo
+
+# csharp
+**/obj
+src/Ominous/bin/Debug
+src/Ominous.Tests/bin
+Reproduce.Test.cs

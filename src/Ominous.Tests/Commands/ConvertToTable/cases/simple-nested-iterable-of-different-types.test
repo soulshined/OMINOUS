@@ -1,0 +1,17 @@
+=== Given ===
+
+[ordered]@{
+    Name = "Foobar";
+    Age = 11;
+    Bio = "[example](http://example.com)";
+    Siblings = 'Jteve Sobs','Sichard Rimmons',[ordered]@{
+        Name = 'Gill Bates';
+        Age = 1995;
+    }
+}
+
+=== Expect
+
+| Name | Age | Bio | Siblings |
+| - | - | - | - |
+| Foobar | 11 | [example](http://example.com) | <ul><li>Jteve Sobs</li><li>Sichard Rimmons</li><li><ul><li>Name: Gill Bates</li><li>Age: 1995</li></ul></li></ul> |

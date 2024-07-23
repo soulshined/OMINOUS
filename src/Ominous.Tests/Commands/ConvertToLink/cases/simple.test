@@ -1,0 +1,7 @@
+=== Given ===
+
+'http://example.com'
+
+=== Expect
+
+http://example.com

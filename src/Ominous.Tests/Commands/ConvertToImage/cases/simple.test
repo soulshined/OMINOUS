@@ -1,0 +1,7 @@
+=== Given ===
+
+'/assets/images/foobar.png'
+
+=== Expect
+
+![/assets/images/foobar.png](/assets/images/foobar.png)

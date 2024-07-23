@@ -1,0 +1,18 @@
+=== Given ===
+
+$AfterBlock = {
+    [Style.Bold()]
+    [Style.Italic()]
+    [Style.Strikethrough()]
+    param($value)
+
+    return $value += "-bar"
+}
+
+'foo','buzz','bazz' | List -After $AfterBlock
+
+=== Expect
+
+- ~~***foo-bar***~~
+- ~~***buzz-bar***~~
+- ~~***bazz-bar***~~

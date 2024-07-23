@@ -1,0 +1,20 @@
+=== Given
+type: expression
+===
+
+$Bold = {
+    [Ominous.Attributes.Markdown.Style.Bold()]
+    param()
+}
+
+[ordered]@{
+    Name = "Foobar";
+    Age = 11;
+    Bio = "[example](http://example.com)";
+} | ConvertTo-Table -After $Bold
+
+=== Expect
+
+| Name | Age | Bio |
+| - | - | - |
+| **Foobar** | **11** | **[example](http://example.com)** |

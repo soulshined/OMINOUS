@@ -1,0 +1,51 @@
+﻿TOPIC
+    about_OMINOUS
+
+SHORT DESCRIPTION
+    OMINOUS is a markdown generator for PowerShell. Use the commands to write 
+    markdown in a fluent manner or mnemonically invoking conventions.
+
+LONG DESCRIPTION
+    
+    OMINOUS is a markdown generator for PowerShell. Use the commands to write 
+    markdown in a fluent manner or mnemonically invoking conventions.
+
+    Other notable features included in OMINOUS:
+    
+    -- Markdown flavor support
+    -- Preferences
+    -- Type Mappers: map a type to another type before converting to markdown
+    -- Attribute based stylings
+    -- Inherit nested value conversion
+
+    [!IMPORTANT]
+    All commands output a leading and trailing line for all block commands 
+    (not inline commands (i.e., image and links))
+
+MNEMONIC INVOCATION
+
+    Every command has aliases and names that are interpreted at time of invocation. 
+
+    For example, to create a header you would simply do the following:
+
+    ```powershell
+    ConvertTo-Heading 'Hello World' -Level 2
+    ```
+
+    Mnemonic invocation of that same command reduces the syntax footprint:
+
+    ```powershell
+    H2 'Hello World'
+    ```
+
+    In addition to syntax sugar, in cases where the command has properties, they 
+    are mutated inherently for you. So in the same example above:
+
+    ```PowerShell
+    H2 'Hello World'
+    ```
+
+    The `Level` property is set to 2 for you, so you no longer need to provide it
+
+SEE ALSO
+    https://github.com/soulshined/ominous/wiki

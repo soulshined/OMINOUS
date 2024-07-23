@@ -1,0 +1,46 @@
+=== Given 
+type: expression
+===
+{ [Style.Bold()] param() }, `
+{ [Style.Center()] param() }, `
+{ [Style.Code()] param() }, `
+{ [Style.Color("red")] param() }, `
+{ [Style.Highlight()] param() }, `
+{ [Style.Indent()] param() }, `
+{ [Style.Italic()] param() }, ` 
+{ [Style.Subscript()] param() }, `
+{ [Style.Superscript()] param() }, `
+{ [Style.Strikethrough()] param() }, `
+{ 
+    [Style.Bold()] 
+    [Style.Italic()] 
+    [Style.Indent(2)] 
+    param() 
+} `
+| % {
+    'foo' | Mkdn $_
+}
+
+=== Expect
+
+**foo**
+
+<center>foo</center>
+
+`foo`
+
+<span style="color: red;">foo</span>
+
+==foo==
+
+&nbsp;&nbsp;&nbsp;&nbsp;foo
+
+*foo*
+
+~foo~
+
+^foo^
+
+~~foo~~
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;***foo***

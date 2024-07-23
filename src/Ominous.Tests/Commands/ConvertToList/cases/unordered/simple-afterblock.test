@@ -1,0 +1,20 @@
+=== Given
+type: expression
+===
+
+$BoldItalicStyle = {
+    [Ominous.Attributes.Markdown.Style.Bold()]
+    [Ominous.Attributes.Markdown.Style.Italic()]
+    [Ominous.Attributes.Markdown.Escape()]
+    param()
+}
+
+'one','three','five','seven','`*-{}|' | List -After $BoldItalicStyle
+
+=== Expect
+
+- ***one***
+- ***three***
+- ***five***
+- ***seven***
+- ***\`\*\-\{\}\|***

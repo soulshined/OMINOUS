@@ -1,0 +1,33 @@
+=== Given 
+args: -Syntax csharp
+===
+
+@"
+public override string ToMarkdown(FlavorType flavor)
+{
+    StringBuilder sb = new();
+    string backticks = "``````"
+
+    sb.Append(backticks).AppendLine(Language != null ? "Language" : backticks)
+        .AppendLine(ExecAfterBlocks(Value))
+        .AppendLine(backticks);
+
+    return sb.ToString();
+}
+"@
+
+=== Expect
+
+```csharp
+public override string ToMarkdown(FlavorType flavor)
+{
+    StringBuilder sb = new();
+    string backticks = "```"
+
+    sb.Append(backticks).AppendLine(Language != null ? "Language" : backticks)
+        .AppendLine(ExecAfterBlocks(Value))
+        .AppendLine(backticks);
+
+    return sb.ToString();
+}
+```

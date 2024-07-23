@@ -1,0 +1,7 @@
+=== Given ===
+
+'This is a note'
+
+=== Expect
+
+> :spiral_notepad: This is a note

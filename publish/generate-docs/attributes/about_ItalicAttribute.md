@@ -1,0 +1,1 @@
+Emphasize a markdown element

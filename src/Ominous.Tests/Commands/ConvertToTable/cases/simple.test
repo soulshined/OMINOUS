@@ -1,0 +1,13 @@
+=== Given ===
+
+[ordered]@{
+    Name = "Foobar";
+    Age = 11;
+    Bio = "[example](http://example.com)";
+}
+
+=== Expect
+
+| Name | Age | Bio |
+| - | - | - |
+| Foobar | 11 | [example](http://example.com) |

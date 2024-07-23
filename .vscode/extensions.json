@@ -1,0 +1,10 @@
+{
+    "recommendations": [
+        "ms-dotnettools.csdevkit",
+        "davidfreer.html-entity-reference",
+        "ms-vscode.powershell",
+        "fabiospampinato.vscode-todo-plus",
+        "jgclark.vscode-todo-highlight",
+        "davidfreer.vscode-snippet-lang"
+    ]
+}

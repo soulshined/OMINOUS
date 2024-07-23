@@ -1,0 +1,14 @@
+{
+    "about_ps1": {
+        "scope": "powershell",
+        "prefix": "about_ps1",
+        "body": [
+            "\\$local:Synopsis = \"$1\"",
+            "\\$local:Description = @\"",
+            "$2",
+            "\"@",
+            "\\$local:RelatedLinks = ${3:@()}",
+            "\\$local:Examples = ${4:@{}}"
+        ],
+    }
+}

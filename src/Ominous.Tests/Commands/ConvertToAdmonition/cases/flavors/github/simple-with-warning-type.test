@@ -1,0 +1,11 @@
+=== Given
+type: expression
+===
+
+$global:OminousPreference = @{ Flavor = 'GitHub' }
+'This is a warning' | Admonition -Type Warning
+
+=== Expect
+
+> [!WARNING]
+> This is a warning

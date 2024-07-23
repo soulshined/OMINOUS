@@ -1,0 +1,13 @@
+{
+    "Test Cases Method": {
+        "scope": "csharp",
+        "prefix": "testcases",
+        "body": [
+            "[Fact]",
+            "public void Run() {",
+            "\tTestCases_ShouldBeValid();",
+            "}"
+        ],
+        "description": "description"
+    }
+}

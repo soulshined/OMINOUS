@@ -1,0 +1,25 @@
+=== Given ===
+
+$AfterBlock = {
+    [Ominous.Attributes.Markdown.Escape()]
+    [Style.Bold()]
+    [Style.Italic()]
+    [Style.Strikethrough()]
+    [Style.Highlight()]
+    [Style.Color("red")]
+    [Style.Center()]
+    [Style.Underline()]
+    [Style.Indent()]
+    param($value)
+
+    return $value += "-bar"
+}
+
+'foo','buzz','bazz','`code`' | List -After $AfterBlock
+
+=== Expect
+
+- &nbsp;&nbsp;&nbsp;&nbsp;==~~***<center><u><span style="color: red;">foo\-bar</span></u></center>***~~==
+- &nbsp;&nbsp;&nbsp;&nbsp;==~~***<center><u><span style="color: red;">buzz\-bar</span></u></center>***~~==
+- &nbsp;&nbsp;&nbsp;&nbsp;==~~***<center><u><span style="color: red;">bazz\-bar</span></u></center>***~~==
+- &nbsp;&nbsp;&nbsp;&nbsp;==~~***<center><u><span style="color: red;">\`code\`\-bar</span></u></center>***~~==

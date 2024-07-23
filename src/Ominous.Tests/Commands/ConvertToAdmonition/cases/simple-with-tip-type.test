@@ -1,0 +1,9 @@
+=== Given
+args: -Type Tip
+===
+
+'This is a tip'
+
+=== Expect
+
+> :bulb: This is a tip

@@ -1,0 +1,9 @@
+=== Given
+args: -NewTab -Title foobar
+===
+
+'http://example.com'
+
+=== Expect
+
+<a href="http://example.com" target="_blank">foobar</a>

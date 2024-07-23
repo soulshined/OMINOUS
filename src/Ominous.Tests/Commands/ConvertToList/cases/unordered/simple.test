@@ -1,0 +1,10 @@
+=== Given ===
+
+'one','three','five','seven'
+
+=== Expect
+
+- one
+- three
+- five
+- seven
